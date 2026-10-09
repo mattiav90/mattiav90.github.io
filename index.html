@@ -62,9 +62,7 @@
     border-radius: 6px;
     border: 1px solid var(--rule);
     display: block;
-    /* keep the low-res grid crisp instead of letting the browser smooth it */
-    image-rendering: pixelated;
-    image-rendering: crisp-edges;
+    object-fit: cover;
   }
 
   @media (max-width: 34rem) {
@@ -204,8 +202,8 @@
 <main class="wrap">
 
   <header class="masthead">
-    <img class="portrait" src="portrait.png" width="132" height="132"
-         alt="Pixelated portrait of Mattia Vezzoli">
+    <img class="portrait" src="portrait.jpg" width="132" height="132"
+         alt="Portrait of Mattia Vezzoli">
     <div class="text">
       <h1>Mattia Vezzoli</h1>
       <p class="role">Ph.D. candidate in Electrical and Computer Engineering, Yale University — asynchronous VLSI and deep learning accelerators.</p>
